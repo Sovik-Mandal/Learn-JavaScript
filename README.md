@@ -6,3 +6,5 @@
 4. Learn Basics HTML and CSS.
 5. Learn Variables in JavaScript.
 6. Added Project-1.
+7. Learn Booleans in JavaScript.
+
