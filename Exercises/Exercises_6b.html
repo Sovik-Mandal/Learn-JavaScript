@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head and Tail</title>
+</head>
+<style>
+    body {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    button {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: solid black 2px;
+        background-color: orange;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <p>Head and Tail</p>
+    <button onclick="
+    const randomNumber = Math.random();
+    let result;
+
+      if (randomNumber < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+
+      const guess = 'heads';
+
+      if (guess === result) {
+        console.log('You win!');
+        alert('You win!');
+      } else {
+        console.log('You lose!');
+        alert('You lose!');
+      }
+
+    ">Tap Here</button>
+</body>
+</html>
