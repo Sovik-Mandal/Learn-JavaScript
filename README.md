@@ -5,3 +5,4 @@
 3. Learn Strings.
 4. Learn Basics HTML and CSS.
 5. Learn Variables in JavaScript.
+7. Learn Booleans in JavaScript.
