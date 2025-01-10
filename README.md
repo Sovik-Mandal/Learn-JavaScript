@@ -4,3 +4,4 @@
 2. Learn Numbers And Math.
 3. Learn Strings.
 4. Learn Basics HTML and CSS.
+5. Learn Variables in JavaScript.
