@@ -1,10 +1,12 @@
 # Learn JavaScript
 
-1. Learn Basics of JavaScript
-2. Learn Numbers And Math.
-3. Learn Strings.
-4. Learn Basics HTML and CSS.
-5. Learn Variables in JavaScript.
-6. Added Project-1.
-7. Learn Booleans in JavaScript.
-8. Added Project-2.
+01. Learn Basics of JavaScript
+02. Learn Numbers And Math.
+03. Learn Strings.
+04. Learn Basics HTML and CSS.
+05. Learn Variables in JavaScript.
+06. Added Project-1.
+07. Learn Booleans in JavaScript.
+08. Added Project-2.
+09. Learn Function in JavaScript.
+10. Modify in Project-2 by adding functions.
