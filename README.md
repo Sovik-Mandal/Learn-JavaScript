@@ -10,3 +10,6 @@
 08. Added Project-2.
 09. Learn Function in JavaScript.
 10. Modify in Project-2 by adding functions.
+11. Learn Object in JavaScript.
+12. Learn JSON and localStorage in JavaScript.
+13. Modify in Project-2 by adding object.
