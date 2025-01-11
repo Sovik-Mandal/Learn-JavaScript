@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises_7a</title>
+</head>
+<body>
+    <script>
+        function greet(name) {
+            if (!name) {
+                console.log('Hi There');
+            }
+            console.log(`Hello ${name}`);
+        }
+
+        greet();
+
+        // Convert Fahrenheit to Celsius //
+        function convertFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+
+        console.log(convertFahrenheit(22));
+
+        // Convert Celsius to Fahrenheit //
+        function convertCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5/9;
+        }
+
+        console.log(convertCelsius(5))
+
+        // Making Thermometer //
+        function convertTemprature(degree , unit) {
+            if (unit === 'C') {
+              const result = convertFahrenheit(degree);
+              return `${result}F`
+            }
+
+            else if (unit === 'F') {
+                const result = convertCelsius(degree);
+                return `${result}C`;
+            }
+        }
+
+        console.log(convertTemprature(25 , 'C'));
+        console.log(convertTemprature(5 , 'F'));
+
+        // Length Converter 'Km' --> 'Miles' or 'Miles' -->  'Km'//
+
+        // Converter 'Miles' -->  'Km'//
+        function convertMilesToKm(miles) {
+            return miles * 1.6;
+        }
+
+        // Converter 'Km' --> 'Miles' //
+        function convertKmToMiles(km) {
+            return km / 1.6;
+        }
+
+        function convertLength(length , from , to) {
+            if (from === 'miles' && to === 'km') {
+                const result = convertMilesToKm(length);
+                return `${result} km`;
+            }
+
+            else if(from ==='km' && to === 'miles') {
+                const result = convertKmToMiles(length);
+                return `${result} miles`;
+            }
+        }
+
+        console.log(convertLength(10, 'km', 'miles'));
+        console.log(convertLength(20, 'miles', 'km'));
+    </script>
+</body>
+</html>
