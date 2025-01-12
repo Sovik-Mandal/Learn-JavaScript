@@ -14,3 +14,6 @@
 12. Learn JSON and localStorage in JavaScript.
 13. Modify in Project-2 by adding object.
 14. Learn Document Object Model (DOM) in JavaScript.
+15. Add Project-03 Using DOM.
+16. Modify Rock Paper Scissor Game using DOM.
+17. Add Project Amazon Cart Using DOM.
