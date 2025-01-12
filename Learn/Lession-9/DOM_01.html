@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document Object Model</title>
+    </head>
+    <body>
+      <button>
+        Hello
+      </button>
+
+
+      <script>
+        // DOM Combine JavaScript and HTML Together it gives JavaScript full Control of the webpage //
+
+        // First Property is document.title //
+        console.log(document.title);
+        document.title = 'Changed';
+
+        // Second Property is document.body //
+        console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>Good Job!</button>';
+
+        // Learning "Method" in DOM //
+
+        // First Method is document.querySelector() //
+
+        // document.querySelector() => lets us get any element from the page and put it inside JavaScript //
+        console.log(document.querySelector('body'));
+
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML = 'New Button';
+
+      </script>
+    </body>
+  </html>

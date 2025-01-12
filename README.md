@@ -1,4 +1,4 @@
-# Learn JavaScript
+# Learn JavaScript 
 
 01. Learn Basics of JavaScript
 02. Learn Numbers And Math.
@@ -13,3 +13,4 @@
 11. Learn Object in JavaScript.
 12. Learn JSON and localStorage in JavaScript.
 13. Modify in Project-2 by adding object.
+14. Learn Document Object Model (DOM) in JavaScript.

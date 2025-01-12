@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-2</title>
+</head>
+<body>
+  <button>
+    Hello
+  </button>
+  <button class="js-button">
+    Second Button
+  </button>
+
+  <script>
+    // Learning "Method" in DOM //
+    // First Method is document.querySelector() //
+    // document.querySelector() => lets us get any element from the page and put it inside JavaScript //
+    console.log(document.querySelector('body'));
+
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML = 'Changed';
+
+    const buttonElement = document.querySelector('.js-button');
+    console.log(buttonElement);
+    document.querySelector('.js-button').innerHTML = 'Button Changed'
+
+    // Window is a bilt in function and JavaScript add Automatcily 
+    window.console.log('window')
+    window.alert('hello')
+  </script>
+</body>
+</html>
