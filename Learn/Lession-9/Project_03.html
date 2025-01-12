@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project-03</title>
 </head>
-<style>
-    button {
-      cursor: pointer;
-    }
-</style>
 <body>
-  <p>YouTude Subscribe Button</p>
+  <p>YouTube Subscribe Button</p>
   <button onclick="
-  subscribe();
-  " class="js-button">
-  Subscribe</button>
-    
+    subscribe();" 
+    class="js-button">Subscribe
+  </button>
+
   <script>
     function subscribe() {
-      const buttonElement = document.querySelector('.js-button');
+      const buttonElement =  document.querySelector('.js-button')
 
-      if (buttonElement.innerText === 'Subscribe') {
+      if(buttonElement.innerHTML === 'Subscribe') {
         buttonElement.innerHTML = 'Subscribed';
       }
       else {
-        uttonElement.innerHTML = 'Subscribe';
+        buttonElement.innerHTML = 'Subscribe';
       }
     }
   </script>
