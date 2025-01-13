@@ -17,3 +17,6 @@
 15. Add Project-03 Using DOM.
 16. Modify Rock Paper Scissor Game using DOM.
 17. Add Project Amazon Cart Using DOM.
+18. Adding Style in Rock Paper Scissor Game.
+19. Adding Style in Amazon Cart.
+20. Adding Style in Project-03.
