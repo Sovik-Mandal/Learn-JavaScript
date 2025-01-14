@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <style>
+    p {
+      margin: 10px;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgb(25, 25, 25);
+      color: white;
+      font-family: Arial;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .move-icon {
+      height: 50px;
+    }
+
+    .move-button {
+      background-color: transparent;
+      border: 3px solid white;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .result {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+
+    .score {
+      margin-top: 60px;
+    }
+
+    .reset-score-button,
+    .auto-play-button {
+      background-color: white;
+      border: none;
+      font-size: 15px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+  </style>
+  <body>
+    <p class="title">Rock Paper Scissor</p>
+    <p>
+    <!-- Math.random() generates a random number between 0 and 1 -->
+      <button
+        onclick=" 
+        playGame('rock');
+        " class="move-button"
+        >
+        <img src="images/rock-emoji.png" class="move-icon">
+      </button>
+
+      <button
+        onclick=" 
+        playGame('paper')
+        " class="move-button"
+        >
+        <img src="images/paper-emoji.png" class="move-icon">
+      </button>
+
+      <button
+        onclick=" 
+        playGame('scissors');
+        " class="move-button"
+        >
+        <img src="images/scissors-emoji.png" class="move-icon">
+      </button>
+
+      <p class="js-result result" >You win</p>
+      <p class="js-moves">
+      </p>
+      <p class="js-score score"></p>
+      <p>
+        <button
+          onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.Ties = 0;
+          localStorage.removeItem('score');
+          updateScoreElement();"
+          class="reset-score-button"
+          >
+          Reset Score
+        </button>
+      </p>
+      <button class="auto-play-button js-play-stop-button" onclick="autoPlay(); changeButtonElement();">Auto Play</button>
+    </p>
+    <script src="Rock-paper-scissors.js"></script>
+  </body>
+</html>

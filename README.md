@@ -25,3 +25,4 @@
 23. Array and Loops-2.
 24. Adding Final Todo List Project with Styling.
 25. Learn Advance Function.
+26. Adding advance function in rock paper scissor game. 
