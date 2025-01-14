@@ -23,3 +23,4 @@
 21. Learn Array And Loops in JavaScript.
 22. Adding Todo List Project.
 23. Array and Loops-2.
+24. Adding Final Todo List Project with Styling.
