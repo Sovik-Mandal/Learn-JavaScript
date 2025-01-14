@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Function</title>
+</head>
+<body>
+  <script>
+    function greeting() {
+      console.log("Hello, World!");
+    }
+    greeting();
+
+    const nums = 2;
+
+    // Anonymous Function --> Function with out a name //
+    const function1 = function greeting() {
+      console.log("Souvik Mandal");
+    }
+
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+
+    const object1 = {
+      num: 2,
+      fun: function() {
+        console.log('Hello');
+      },
+    };
+    object1.fun();
+
+    function display(param) {
+      console.log(param);
+    }
+
+    display('Nanital');
+
+    // passing Function in another Function //
+    function run(param) {
+      param();
+    }
+
+    run(function() {
+      console.log('Hello2');
+    });
+
+    // Learning setTimeout() //
+    // Here is 2 Parameter first is Function and Second is how long to wait before running the function (here is number in millisecond) 1000 millisecond = 1 second //
+    setTimeout(function() {
+      console.log('timeout');
+      console.log('timeout2');
+    }, 3000);
+    
+    // Asynchronous Code //
+    // Asynchronous Code mens computer won't wait for a line to finish before going to the next line //
+    console.log('next line');
+
+    // Synchronous Code //
+    // Synchronous Code mens computer will wait for a line to finish before going to the next line //
+    
+
+    // Learning setInterval() //
+    // setInterval() --> is running your code every given time interval and it is also Asynchronous Code //
+    setInterval(function() {
+      console.log('Interval');
+    }, 3000);
+
+    console.log('next line2');
+
+    [
+      'make dinner',
+      'wash dishes',
+      'watch YouTube'
+    ].forEach(function(value, index) {
+
+      // continue statement in for-Each loop //
+      if (value === 'wash dishes') {
+        return;
+      }
+      console.log(value);
+      console.log(index);
+    });
+  </script>
+</body>
+</html>

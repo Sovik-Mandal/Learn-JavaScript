@@ -1,6 +1,6 @@
 # Learn JavaScript 
 
-01. Learn Basics of JavaScript
+01. Learning Basics of JavaScript
 02. Learn Numbers And Math.
 03. Learn Strings.
 04. Learn Basics HTML and CSS.
@@ -24,3 +24,4 @@
 22. Adding Todo List Project.
 23. Array and Loops-2.
 24. Adding Final Todo List Project with Styling.
+25. Learn Advance Function.
