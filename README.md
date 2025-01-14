@@ -20,5 +20,6 @@
 18. Adding Style in Rock Paper Scissor Game.
 19. Adding Style in Amazon Cart.
 20. Adding Style in Project-03.
-21. Adding Todo List Project.
+21. Learn Array And Loops in JavaScript.
 22. Adding Todo List Project.
+23. Array and Loops-2.
