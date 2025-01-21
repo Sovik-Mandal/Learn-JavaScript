@@ -1,35 +1,3 @@
-const products = [
-{
-  image: 'Images/Products/athletic-cotton-socks-6-pairs.jpg',
-  name: 'Black and Gray Athletic Cotton Socks - 6 Pair',
-  rating: {
-    stars: 4.5,
-    count: 87
-  },
-  priceCents: 1090
-},
-
-{
-  image: 'Images/Products/intermediate-composite-basketball.jpg',
-  name: 'Intermediate Size Basketball',
-  rating: {
-    stars: 4,
-    count: 127,
-  },
-  priceCents: 2095
-},
-
-{
-  image: 'Images/Products/blackout-curtain-set-beige.webp',
-  name: 'Blackout Curtains Set 4-Pack - Beige',
-  rating: {
-    stars: 4.5,
-    count: 2154,
-  },
-  priceCents: 1799
-},
-];
-
 let productsHTML = ''
 
 products.forEach((product) => {
