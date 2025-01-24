@@ -22,21 +22,23 @@ export function renderOrderSummery() {
     const deliveryOptionId = cartItem.deliveryOptionId;
 
     // Find the matching delivery option for the cart item
-    let matchingDeliveryOption;
+    let deliveryOptions;
     deliveryOption.forEach((option) => {
       if (option.id === deliveryOptionId) {
-        matchingDeliveryOption = option;
+        deliveryOptions = option;
       }
     });
 
       // Calculate the delivery date for the selected delivery option
       const today = dayjs();
       const deliveryDate = today.add(
-        matchingDeliveryOption.deliveryDate, // Fixed to use the matched delivery option
+        deliveryOptions.deliveryDate, // Fixed to use the matched delivery option
         'days'
       );
 
-      const dateString = deliveryDate.format('dddd, MMMM D');
+      const dateString = deliveryDate.format(
+        'dddd, MMMM D'
+      );
 
       // Build the cart summary HTML
       cartSummaryHTML += `
@@ -91,7 +93,9 @@ export function renderOrderSummery() {
         'days'
       );
 
-      const dateString = deliveryDate.format('dddd, MMMM D');
+      const dateString = deliveryDate.format(
+        'dddd, MMMM D'
+      );
 
       const priceString = deliveryOption.priceCent === 0
         ? 'FREE'
