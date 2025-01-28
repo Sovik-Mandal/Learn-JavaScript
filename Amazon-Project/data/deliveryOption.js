@@ -17,12 +17,14 @@ export const deliveryOption = [
 ]
 
 export function getDeliveryOption(deliveryOptionId) {
-  let matchingDeliveryOption;
+  let deliveryOptions;
+
+
   deliveryOption.forEach((option) => {
     if (option.id === deliveryOptionId) {
-      matchingDeliveryOption = option;
+      deliveryOptions = option;
     }
   });
 
-  return deliveryOption || deliveryOption[0];
+  return deliveryOptions || deliveryOption[0];
 } 

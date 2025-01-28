@@ -2,7 +2,7 @@ import { cart, removeFromCart, updateDeliveryOption } from '../../data/cart.js';
 import { products, getProduct } from '../../data/products.js';
 import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
-import { deliveryOption } from '../../data/deliveryOption.js';
+import { deliveryOption, getDeliveryOption } from '../../data/deliveryOption.js';
 
 const today = dayjs();
 
@@ -22,12 +22,7 @@ export function renderOrderSummery() {
     const deliveryOptionId = cartItem.deliveryOptionId;
 
     // Find the matching delivery option for the cart item
-    let deliveryOptions;
-    deliveryOption.forEach((option) => {
-      if (option.id === deliveryOptionId) {
-        deliveryOptions = option;
-      }
-    });
+    const deliveryOptions = getDeliveryOption(deliveryOptionId);
 
       // Calculate the delivery date for the selected delivery option
       const today = dayjs();
