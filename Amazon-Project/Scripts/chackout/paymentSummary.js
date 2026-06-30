@@ -1,5 +1,5 @@
 import { cart, removeFromCart } from '../../data/cart.js';
-import { getProduct } from '../../data/products.js';
+import { getProduct, products } from '../../data/products.js';
 import { getDeliveryOption } from '../../data/deliveryOption.js';
 import { formatCurrency } from '../utils/money.js';
 
@@ -20,7 +20,7 @@ export function renderPaymentSummery() {
   const taxCents = totalBeforeTaxCents * 0.1;
   const totalCents = totalBeforeTaxCents + taxCents;
 
-
+  console.log(products)
   console.log(totalBeforeTaxCents);
   console.log(totalCents);
 
